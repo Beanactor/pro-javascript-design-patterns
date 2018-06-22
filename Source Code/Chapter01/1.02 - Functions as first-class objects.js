@@ -26,7 +26,7 @@ var baz = (function(foo, bar) {
 /* An anonymous function used as a closure. */
 
 var baz;
-/* ??? */
+/* 变量foo和bar定义在匿名函数中。函数bar定义在闭包中，所以可以访问这两个变量，即使在闭包执行结束后 */
 (function() {
   var foo = 10;
   var bar = 2;
