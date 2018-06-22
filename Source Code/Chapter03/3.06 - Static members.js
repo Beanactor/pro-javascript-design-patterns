@@ -1,9 +1,11 @@
+
 var Book = (function() {
   
   // Private static attributes.
   var numOfBooks = 0;
 
-  // Private static method.
+  // Private static method.  
+//checkIsbn 被设计为静态方法, 在内存中只会存放一份 ，每个实例不会生成一个新副本，避免浪费内存
   function checkIsbn(isbn) {
     ... 
   }    
