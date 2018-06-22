@@ -3,12 +3,12 @@ var Book = function(newIsbn, newTitle, newAuthor) { // implements Publication
   // Private attributes.
   var isbn, title, author;
 
-  // Private method.
+  // Private method.  （私有方法）
   function checkIsbn(isbn) {
     ... 
   }  
 
-  // Privileged methods.
+  // Privileged methods.  （特权方法）
   this.getIsbn = function() {
     return isbn;
   };
