@@ -1,9 +1,10 @@
 /* Singleton as an Object Literal. */
-
+/* 对象字面量单体 */
 MyNamespace.Singleton = {};
 
 /* Singleton with Private Members, step 1. */
-
+/* 匿名函数创建闭包 */
+/* 用定义之后立即执行函数创建单体，匿名函数返回哟个对象，赋值给MyNamespace.Singleton */
 MyNamespace.Singleton = (function() {
   return {};
 })();
